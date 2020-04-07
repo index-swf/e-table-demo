@@ -23,16 +23,19 @@ const columns = [
     dataIndex: 'proxyReadTimeout',
     title: 'proxyReadTimeout',
     editor: <Input />,
+    width: 60,
   },
   {
     dataIndex: 'proxyConnectTimeout',
     title: 'proxyConnectTimeout',
     editor: <Input />,
+    width: 60,
   },
   {
     dataIndex: 'clientMaxBodySize',
     title: 'clientMaxBodySize',
     editor: <Input />,
+    width: 60,
   },
 ];
 
