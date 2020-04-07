@@ -2,7 +2,6 @@
 import React, { useMemo, useState, useCallback } from "react";
 import { TableContext } from "./common";
 import { Table, Form, Space, Button, Popconfirm } from "antd";
-import "antd/dist/antd.css";
 
 const Operation = ({ index }) => {
   const {
