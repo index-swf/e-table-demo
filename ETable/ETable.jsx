@@ -46,6 +46,7 @@ const Operation = ({ index }) => {
 const defaultOperationColumn = {
   key: "operation",
   title: "操作",
+  width: 120,
   render: (text, record, index) => {
     return <Operation index={index} />;
   }
