@@ -8,16 +8,19 @@ const columns = [
     dataIndex: 'domain',
     title: '域名',
     editor: <Input />,
+    width: 200,
   },
   {
     dataIndex: 'path',
     title: '路径',
     editor: <Input />,
+    width: 160,
   },
   {
     dataIndex: 'group',
     title: '流量分组',
     editor: <Input />,
+    width: 160,
   },
   {
     dataIndex: 'proxyReadTimeout',
@@ -39,8 +42,26 @@ const columns = [
   },
 ];
 
+const defaultValue = [ // nginx 注册配置参数
+        { 
+            "domain": "qa.koala.biztech.sogou", // 域名
+            "path": "/", // 路径
+            "group": "default", // 流量分组
+            "proxyReadTimeout": "300s", 
+            "proxyConnectTimeout": "2s",
+            "clientMaxBodySize": "100M"
+        },
+        { 
+            "domain": "qa.koala.biztech.sogou", // 域名
+            "path": "/socket.io/", // 路径
+            "group": "default", // 流量分组
+            "proxyReadTimeout": "300s", 
+            "proxyConnectTimeout": "2s",
+            "clientMaxBodySize": "100M"
+        }
+    ];
 export default function App() {
-  const [value, setValue] = React.useState([]);
+  const [value, setValue] = React.useState(defaultValue);
 
   return (
     <div className="App">
