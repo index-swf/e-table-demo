@@ -155,6 +155,7 @@ const ETable = props => {
     [edit, deleteRecord, save, cancel, currentEditIndex, form]
   );
   const addItem = () => {
+    setCurrentEditIndex(value.length);
     onChange([...value, newItemDefaultValue]);
   };
 
