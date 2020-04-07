@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.css";
 import ETable from '../ETable';
 import { Input } from 'antd';
+import "antd/dist/antd.css";
 
 const columns = [
   {
